@@ -1,13 +1,10 @@
 import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
-import { CenterPageContainer } from "../../style-helpers";
+import { CenterPageContainer, DefaultPageContainer } from "../../style-helpers";
 
-export const HomepageContainer = styled(CenterPageContainer)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+export const HomepageContainer = styled.main`
+  ${DefaultPageContainer}
   justify-content: space-around;
-  min-height: 75vh;
 `;
 
 export const HomepageContent = styled.p`

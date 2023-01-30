@@ -1,13 +1,9 @@
-import { Form } from "react-router-dom";
 import styled from "styled-components/macro";
-import { CenterPageContainer } from "../../style-helpers";
+import { CenterPageContainer, DefaultPageContainer } from "../../style-helpers";
 
-export const JoinUsPageContainer = styled(CenterPageContainer)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
+export const JoinUsPageContainer = styled.main`
+  ${DefaultPageContainer}
+  ${CenterPageContainer}
 `;
 export const InquiryContainer = styled.div`
   flex: 1 1 0;

@@ -16,7 +16,7 @@ const HomePage = () => {
   const random_workplaces = Math.floor(Math.random() * 51) + 1;
 
   return (
-    <HomepageContainer as="main">
+    <HomepageContainer>
       {setInquiryFinalised(false)}
       <HomepageContent>
         Locuri de muncă in Germania cu salariu intre{" "}

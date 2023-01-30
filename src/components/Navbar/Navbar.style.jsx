@@ -10,7 +10,7 @@ export const NavbarContainer = styled.nav`
   background-position: center bottom;
 `;
 
-export const NavbarContent = styled(CenterPageContainer)`
+export const NavbarContent = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
