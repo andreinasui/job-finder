@@ -1,0 +1,5 @@
+{
+  "/questions/list": "/questions",
+  "/questions/get/:id": "/questions/:id",
+  "/users/create": "/users"
+}

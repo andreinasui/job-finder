@@ -1,3 +1,4 @@
+export { appRoutes } from "./constants";
 export { default as HomePage } from "./HomePage/HomePage";
 export { default as JoinUs } from "./JoinUs/JoinUs";
 export { default as WPFound } from "./Workplaces/WorkplacesFound";

@@ -1,5 +1,5 @@
 {
-  "name": "locuri-munca",
+  "name": "job-finder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,9 +16,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-dev": "react-scripts start && json-server --watch -p 3001 fake_data/db.json --routes fake_data/routes.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "mocked-data": "json-server --watch -p 3001 --delay 300 mocked-data/db.json --routes mocked-data/routes.json"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +42,7 @@
   },
   "devDependencies": {
     "@styled/typescript-styled-plugin": "^0.20.0",
+    "json-server": "^0.17.1",
     "typescript": "^4.9.4"
   }
 }

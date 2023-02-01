@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CenterPageContainer } from "../../style-helpers";
 
 export const NavbarContainer = styled.nav`
@@ -27,11 +27,14 @@ export const NavbarLogo = styled(Link)`
 
 export const NavbarMenu = styled.ul`
   list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 `;
 
 export const NavbarMenuItem = styled.li``;
 
-export const NavbarMenuItemContent = styled(Link)`
+export const NavbarMenuItemContent = styled(NavLink)`
   background-image: linear-gradient(
     var(--main-accent-color),
     var(--main-accent-color)
@@ -44,6 +47,9 @@ export const NavbarMenuItemContent = styled(Link)`
   text-decoration: none;
   font-size: 1.2rem;
   &:hover {
+    background-size: 100% 2px;
+  }
+  &.active {
     background-size: 100% 2px;
   }
 `;

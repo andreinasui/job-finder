@@ -1,0 +1,118 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Câți ani ați mai lucrat în străinătate?",
+      "answers": [
+        {
+          "id": 11,
+          "text": "Nu am lucrat în străinătate"
+        },
+        {
+          "id": 12,
+          "text": "Mai puțin de 2 ani"
+        },
+        {
+          "id": 13,
+          "text": "Intre 2 și 5 ani"
+        },
+        {
+          "id": 14,
+          "text": "Mai mult de 5 ani"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Unde ai mai lucrat inainte?",
+      "answers": [
+        {
+          "id": 21,
+          "text": "Cules legume"
+        },
+        {
+          "id": 22,
+          "text": "Sortare depozit"
+        },
+        {
+          "id": 23,
+          "text": "Abator"
+        },
+        {
+          "id": 24,
+          "text": "Curier pachete"
+        },
+        {
+          "id": 25,
+          "text": "Curățenie hotelieră"
+        },
+        {
+          "id": 26,
+          "text": "Agricultură"
+        },
+        {
+          "id": 27,
+          "text": "Construcții"
+        },
+        {
+          "id": 28,
+          "text": "Meșter în construcții interioare"
+        },
+        {
+          "id": 29,
+          "text": "Altceva"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Scrie-ne câteva cuvinte despre ce ai muncit sau ce muncești acum",
+      "answers": []
+    },
+    {
+      "id": 4,
+      "question": "Care dintre urmatoarele limbi le vorbești la nivel conversațional?",
+      "answers": [
+        {
+          "id": 41,
+          "text": "Doar limba Română"
+        },
+        {
+          "id": 42,
+          "text": "Engleză"
+        },
+        {
+          "id": 43,
+          "text": "Olandeză"
+        },
+        {
+          "id": 44,
+          "text": "Germană"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Când ați putea incepe să lucrați?",
+      "answers": [
+        {
+          "id": 51,
+          "text": "Imediat"
+        },
+        {
+          "id": 52,
+          "text": "În următoarele 2 săptămâni"
+        },
+        {
+          "id": 53,
+          "text": "În 2-4 săptămâni"
+        },
+        {
+          "id": 54,
+          "text": "Peste 1 lună"
+        }
+      ]
+    }
+  ],
+  "users": []
+}

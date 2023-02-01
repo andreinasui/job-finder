@@ -1,6 +1,6 @@
-import { useContext } from "react";
-import { InquiryFinalisedContext } from "../../contexts/Inquiry/InquiryFinalised";
-import { appRoutes } from "../constants";
+import { useContext, useRef } from "react";
+import { InquiryFinalisedContext } from "contexts/Inquiry/InquiryFinalised";
+import { appRoutes } from "pages";
 import {
   EmphasizedText,
   HomepageContainer,
@@ -13,7 +13,7 @@ const HomePage = () => {
     InquiryFinalisedContext
   );
 
-  const random_workplaces = Math.floor(Math.random() * 51) + 1;
+  const random_workplaces = useRef(Math.floor(Math.random() * 51) + 1);
 
   return (
     <HomepageContainer>
@@ -26,7 +26,7 @@ const HomePage = () => {
         suplimentare plătite dublu.
       </HomepageContent>
       <HomepageContent>
-        Mai avem {random_workplaces} locuri disponibile.
+        Mai avem {random_workplaces.current} locuri disponibile.
       </HomepageContent>
       <JoinUsButton to={appRoutes.JOINUS}>
         Apasă aici dacă prezinți interes

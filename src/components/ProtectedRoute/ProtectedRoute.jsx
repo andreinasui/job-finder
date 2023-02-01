@@ -1,5 +1,5 @@
+import { appRoutes } from "pages";
 import { Navigate, Outlet } from "react-router-dom";
-import { appRoutes } from "../../pages/constants";
 
 const ProtectedRoute = ({
   isAllowed,

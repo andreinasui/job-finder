@@ -10,11 +10,10 @@ export const InquiryContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2rem;
 `;
 export const QuestionContainer = styled.div`
-  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -42,7 +41,7 @@ export const AnswerBox = styled.div`
   height: 8rem;
   cursor: pointer;
   padding: 1rem;
-  background-color: lightcoral;
+  background-color: var(--primary-color);
   border-radius: 15px;
   transition: transform 250ms;
   &:hover {
@@ -63,20 +62,20 @@ export const AnswerTextArea = styled.textarea`
   width: 100%;
   height: 10rem;
   outline: none;
-  border: 2px solid transparent;
-  background: #eee;
+  border: 2px solid #eee;
+  background: white;
   border-radius: 10px;
   resize: none;
   padding: 0.5rem;
   &:focus {
     background-color: white;
-    border-color: lightcoral;
+    border-color: var(--primary-color);
     font-size: 0.85rem;
   }
 `;
 export const AnswerTextAreaSubmitButton = styled.button`
   background-color: white;
-  border: 2px solid lightcoral;
+  border: 2px solid var(--primary-color);
   padding: 0.75rem 1.25rem;
   border-radius: 10px;
   font-weight: 500px;
@@ -97,7 +96,8 @@ export const SlidersContainer = styled.div`
   margin-bottom: 2rem;
 `;
 export const SliderContent = styled.div`
-  background-color: ${(props) => (props.active ? "lightcoral" : "#eee")};
+  background-color: ${(props) =>
+    props.active ? "var(--primary-color)" : "#eee"};
   padding: 0.4rem ${(props) => (props.active ? "2rem" : "1rem")};
   border-radius: 1rem;
   transition: all 250ms ease;

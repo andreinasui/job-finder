@@ -1,7 +1,13 @@
 import { useContext } from "react";
-import { HomePage, JoinUs, NotFound, WPFound } from "./pages";
-import { ProtectedRoute } from "./components";
-import { appRoutes } from "./pages/constants";
+import {
+  appRoutes,
+  ErrorPage,
+  HomePage,
+  JoinUs,
+  NotFound,
+  WPFound,
+} from "pages";
+import { ProtectedRoute } from "components";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -13,6 +19,7 @@ import {
   InquiryFinalisedContextProvider,
 } from "./contexts";
 import { RootLayout } from "./layouts";
+import { inquiryLoader } from "pages/JoinUs/JoinUs";
 
 const AppRouter = () => {
   const { isFinalised: isInquiryFinalised } = useContext(
@@ -23,11 +30,16 @@ const AppRouter = () => {
     createRoutesFromElements(
       <Route path={appRoutes.ROOT_PAGE} element={<RootLayout />}>
         <Route index element={<HomePage />} />
-        <Route path={appRoutes.JOINUS} element={<JoinUs />} />
+        <Route
+          path={appRoutes.JOINUS}
+          element={<JoinUs />}
+          loader={inquiryLoader}
+          errorElement={<ErrorPage />}
+        />
         <Route
           element={
             <ProtectedRoute
-              // isAllowed={isInquiryFinalised}
+              // TODO: isAllowed={isInquiryFinalised}
               isAllowed={true}
               redirectPath={appRoutes.HOME_PAGE}
             />

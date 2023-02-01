@@ -8,6 +8,7 @@ body {
 }
 :root {
   --main-accent-color: hsl(35, 67%, 50%);
+  --primary-color: lightcoral;
   --logo-color: hsl(215, 67%, 50%);
 }
 * {

@@ -4,6 +4,7 @@ import { CenterPageContainer, DefaultPageContainer } from "../../style-helpers";
 
 export const HomepageContainer = styled.main`
   ${DefaultPageContainer}
+  ${CenterPageContainer}
   justify-content: space-around;
 `;
 

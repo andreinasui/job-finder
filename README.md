@@ -2,6 +2,9 @@
 
 ## TODO:
 
-[ ] Workplaces found user input form
-[ ] Inquiry answers better context to user saving
-[ ] Firebase integration
+- [ ] Workplaces found user input form
+  - [x] Basic form
+  - [ ] Style form
+  - [ ] Add input validation
+- [ ] Inquiry answers better context to user saving
+- [x] DB integration

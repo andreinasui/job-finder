@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   NavbarContainer,
   NavbarContent,
@@ -15,6 +16,9 @@ const Navbar = () => {
         <NavbarMenu>
           <NavbarMenuItem>
             <NavbarMenuItemContent to="join-us">Join Us</NavbarMenuItemContent>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <NavbarMenuItemContent to="/">Dashboard</NavbarMenuItemContent>
           </NavbarMenuItem>
         </NavbarMenu>
       </NavbarContent>
