@@ -29,7 +29,7 @@ export const SaveUserToDB = async (user) => {
       return res.json();
     })
     .then((data) => {
-      console.log(data);
-      console.log("Saved to DB!");
+      // console.log(data);
+      // console.log("Saved to DB!");
     });
 };

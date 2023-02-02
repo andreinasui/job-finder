@@ -114,5 +114,191 @@
       ]
     }
   ],
-  "users": []
+  "users": [
+    {
+      "user": {
+        "name": "Andrei",
+        "age": "25-30",
+        "phoneNumber": "+40 832 123 312 312 3",
+        "gender": "man",
+        "county": "Alba",
+        "photo": ""
+      },
+      "inquiryEntries": [
+        {
+          "question": 1,
+          "answer": 12
+        },
+        {
+          "question": 2,
+          "answer": 25
+        },
+        {
+          "question": 3,
+          "answer": "dddddddddddddddddd"
+        },
+        {
+          "question": 4,
+          "answer": 42
+        },
+        {
+          "question": 5,
+          "answer": 52
+        }
+      ],
+      "id": 1
+    },
+    {
+      "user": {
+        "name": "Andrei",
+        "age": "25-30",
+        "phoneNumber": "+40 832 123 312 312 3",
+        "gender": "man",
+        "county": "Alba",
+        "photo": ""
+      },
+      "inquiryEntries": [
+        {
+          "question": 1,
+          "answer": 12
+        },
+        {
+          "question": 2,
+          "answer": 25
+        },
+        {
+          "question": 3,
+          "answer": "dddddddddddddddddd"
+        },
+        {
+          "question": 4,
+          "answer": 42
+        },
+        {
+          "question": 5,
+          "answer": 52
+        }
+      ],
+      "id": 2
+    },
+    {
+      "user": {
+        "name": "Andrei Nasui",
+        "age": "25-30",
+        "phoneNumber": "+40 729 977 287",
+        "gender": "man",
+        "county": "Timiş",
+        "photo": ""
+      },
+      "inquiryEntries": [
+        {
+          "question": 1,
+          "answer": 12
+        },
+        {
+          "question": 2,
+          "answer": 25
+        },
+        {
+          "question": 3,
+          "answer": "dddddddddddddddddd"
+        },
+        {
+          "question": 4,
+          "answer": 42
+        },
+        {
+          "question": 5,
+          "answer": 52
+        }
+      ],
+      "id": 3
+    },
+    {
+      "user": {
+        "name": "Andrei Nasui",
+        "age": "18-25",
+        "phoneNumber": "+40 729 977 287",
+        "gender": "man",
+        "county": "Timiş",
+        "photo": ""
+      },
+      "inquiryEntries": [
+        {
+          "question": 1,
+          "answer": 12
+        },
+        {
+          "question": 2,
+          "answer": 25
+        },
+        {
+          "question": 3,
+          "answer": "dsadsadasdas"
+        },
+        {
+          "question": 4,
+          "answer": 42
+        },
+        {
+          "question": 5,
+          "answer": 52
+        }
+      ],
+      "id": 4
+    },
+    {
+      "user": {
+        "name": "Andrei Nasui",
+        "age": "18-25",
+        "phoneNumber": "+40 729 977 287",
+        "gender": "man",
+        "county": "Timiş",
+        "photo": ""
+      },
+      "inquiryEntries": [
+        {
+          "question": 1,
+          "answer": 12
+        },
+        {
+          "question": 2,
+          "answer": 24
+        },
+        {
+          "question": 3,
+          "answer": "dsdsadsadasdsa"
+        },
+        {
+          "question": 4,
+          "answer": 42
+        },
+        {
+          "question": 5,
+          "answer": 52
+        },
+        {
+          "question": 1,
+          "answer": 12
+        },
+        {
+          "question": 2,
+          "answer": 24
+        },
+        {
+          "question": 3,
+          "answer": "dsdasdsadasdas"
+        },
+        {
+          "question": 4,
+          "answer": 42
+        },
+        {
+          "question": 5,
+          "answer": 52
+        }
+      ],
+      "id": 5
+    }
+  ]
 }

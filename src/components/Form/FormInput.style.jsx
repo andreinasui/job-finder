@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components/macro";
 import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/semantic-ui.css";
+// import "react-phone-input-2/lib/semantic-ui.css";
 
 export const FormStyled = styled.form`
   display: grid;
@@ -53,7 +53,7 @@ export const SelectButton = styled.button`
   }
 `;
 export const FormSubmitButtonContainer = styled.div`
-  grid-column: span 2;
+  grid-column: 1 / -1;
 `;
 export const FormSubmitButton = styled.button`
   background-color: white;
@@ -71,12 +71,62 @@ export const FormSubmitButton = styled.button`
   }
 `;
 
+export const FormInputDropdownWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+`;
+
+export const DropdownContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid #eee;
+  border-top: none;
+  border-radius: 5px;
+  overflow: scroll;
+  max-height: 15rem;
+`;
+export const DropdownButtons = styled.button`
+  border: 2px transparent;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  background-color: white;
+  margin: 0.25rem;
+  border-radius: inherit;
+  transition: background-color 300ms ease;
+  &:not(:last-child) {
+    border-bottom: 2px solid #eee;
+  }
+  &:hover {
+    background-color: var(--primary-color);
+  }
+  &:focus {
+    outline: 2px solid var(--primary-color);
+  }
+`;
+
 export const PhoneInputStyled = styled(PhoneInput)`
+  display: flex;
+  justify-content: center;
+  & .react-tel-input {
+    min-height: 20rem !important;
+  }
   & .special-label {
     display: none;
   }
   & .form-control {
-    /* display: inline-block; */
+    border: 2px solid #eee;
+    padding: 0.75rem;
+    outline: none;
+    border-radius: 5px;
+    flex: 1 1 0;
+    &:focus {
+      border-color: var(--primary-color);
+    }
     /* border: none; */
     /* border-bottom: 2px solid hsl(0, 10%, 55%); */
     /* border-radius: 0; */
@@ -86,6 +136,8 @@ export const PhoneInputStyled = styled(PhoneInput)`
     /* outline: none; */
   }
   & .flag-dropdown {
+    display: block;
+    position: inherit;
     /* display: inline-block; */
     /* position: absolute; */
     /* border: none; */

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { UserRegistrationForm } from "components";
 import { SaveUserToDB } from "db";
 import {
@@ -7,9 +7,11 @@ import {
   IntroContainer,
   WFPageContainer,
 } from "./WorkplaceFound.style";
+import { appRoutes } from "pages/constants";
 
 const WorkplacesFound = () => {
   const randWPFound = useRef(Math.floor(Math.random() * 3) + 1);
+  const navigator = useNavigate();
   const { state } = useLocation();
   const { inquiryEntries } = state;
 
@@ -19,8 +21,8 @@ const WorkplacesFound = () => {
 
   const handleFormSubmit = (formData) => {
     const unifiedData = unifyData(formData, inquiryEntries);
-    console.log(unifiedData);
     SaveUserToDB(unifiedData);
+    navigator(appRoutes.HOME_PAGE, { replace: true });
   };
 
   return (

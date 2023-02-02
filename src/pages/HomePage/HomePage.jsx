@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { InquiryFinalisedContext } from "contexts/Inquiry/InquiryFinalised";
 import { appRoutes } from "pages";
 import {
@@ -12,12 +12,14 @@ const HomePage = () => {
   const { setFinalised: setInquiryFinalised } = useContext(
     InquiryFinalisedContext
   );
-
   const random_workplaces = useRef(Math.floor(Math.random() * 51) + 1);
+
+  useEffect(() => {
+    setInquiryFinalised(false);
+  }, []);
 
   return (
     <HomepageContainer>
-      {setInquiryFinalised(false)}
       <HomepageContent>
         Locuri de muncă in Germania cu salariu intre{" "}
         <span style={{ fontWeight: "bold" }}>1400€ - 2500€ NET</span> și

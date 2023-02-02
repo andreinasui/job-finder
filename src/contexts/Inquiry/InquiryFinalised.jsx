@@ -1,4 +1,4 @@
-import { createContext, useRef, useState } from "react";
+import { createContext, useState } from "react";
 
 export const InquiryFinalisedContext = createContext({
   isFinalised: false,
@@ -11,7 +11,6 @@ export const InquiryFinalisedContextProvider = ({ children }) => {
   const value = {
     isFinalised: isFinalised,
     setFinalised: (newValue) => {
-      console.log(newValue);
       setIsFinalised(newValue);
     },
   };
