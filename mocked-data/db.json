@@ -299,6 +299,40 @@
         }
       ],
       "id": 5
+    },
+    {
+      "user": {
+        "name": "",
+        "age": "18-25",
+        "phoneNumber": "",
+        "gender": "man",
+        "county": "",
+        "photo": "",
+        "undefined": "+40 833 213 931 23"
+      },
+      "inquiryEntries": [
+        {
+          "question": 1,
+          "answer": 12
+        },
+        {
+          "question": 2,
+          "answer": 23
+        },
+        {
+          "question": 3,
+          "answer": "asdasdsadas"
+        },
+        {
+          "question": 4,
+          "answer": 42
+        },
+        {
+          "question": 5,
+          "answer": 51
+        }
+      ],
+      "id": 6
     }
   ]
 }

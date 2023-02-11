@@ -1,6 +1,5 @@
-import styled, { css } from "styled-components/macro";
+import styled from "styled-components/macro";
 import PhoneInput from "react-phone-input-2";
-// import "react-phone-input-2/lib/semantic-ui.css";
 
 export const FormStyled = styled.form`
   display: grid;

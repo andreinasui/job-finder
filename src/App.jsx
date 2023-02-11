@@ -39,7 +39,8 @@ const AppRouter = () => {
         <Route
           element={
             <ProtectedRoute
-              isAllowed={isInquiryFinalised}
+              // TODO: isAllowed={isInquiryFinalised}
+              isAllowed={true}
               redirectPath={appRoutes.HOME_PAGE}
             />
           }
