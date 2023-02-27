@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { UserRegistrationForm } from "components";
-import { SaveUserToDB } from "db";
+import { saveUserToDB } from "db";
 import {
   FormContainer,
   IntroContainer,
@@ -21,7 +21,7 @@ const WorkplacesFound = () => {
 
   const handleFormSubmit = (formData) => {
     const unifiedData = unifyData(formData, inquiryEntries);
-    SaveUserToDB(unifiedData);
+    saveUserToDB(unifiedData);
     navigator(appRoutes.HOME_PAGE, { replace: true });
   };
 

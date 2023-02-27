@@ -5,7 +5,6 @@ import {
   DropdownContainer,
   FormInputDropdownWrapper,
   FormInputLabel,
-  TextInputField,
 } from "./UserRegistrationForm.style";
 
 const FormDropdown = ({ label, textInputProps, dropDownItems }) => {

@@ -15,7 +15,7 @@ import {
   SlidersContainer,
   SliderContent,
 } from "./JoinUs.styles";
-import { GetQuestions as FetchQuestionsFromDB } from "db";
+import { fetchQuestions as FetchQuestionsFromDB } from "db";
 
 let savedEntries = [];
 

@@ -18,6 +18,7 @@ const INITIAL_FORM_DATA = {
   gender: "",
   county: "",
   photo: "",
+  trained: false,
 };
 
 const counties = [
@@ -72,21 +73,22 @@ export const UserRegistrationForm = ({ onSubmit }) => {
   const [phoneNumberFieldValid, setPhoneNumberFieldValid] = useState(false);
   const [ageSelected, setAgeSelected] = useState(false);
   const [genderSelected, setGenderSelected] = useState(false);
-  const [formValid, setFormValid] = useState(false);
+
+  let formValid =
+    nameFieldValid &&
+    countyFieldValid &&
+    phoneNumberFieldValid &&
+    ageSelected &&
+    genderSelected;
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
     onSubmit(formData);
-    // TODO: resetFormFields();
   };
 
   function handleInputChange({ name, value }) {
     setFormData({ ...formData, [name]: value });
   }
-
-  const resetFormFields = () => {
-    setFormData(INITIAL_FORM_DATA);
-  };
 
   const validateNameField = (value) => {
     let result = false;
@@ -107,7 +109,6 @@ export const UserRegistrationForm = ({ onSubmit }) => {
   };
 
   const handleTextInputChange = (textFieldId, formName, value) => {
-    // TODO: Upgrade form validation
     if (textFieldId === "nameField") {
       validateNameField(value);
     }
@@ -118,24 +119,8 @@ export const UserRegistrationForm = ({ onSubmit }) => {
       validatePhoneNumberField(value);
     }
 
-    handleInputChange({ formName, value });
+    handleInputChange({ name: formName, value });
   };
-
-  useEffect(() => {
-    setFormValid(
-      nameFieldValid &&
-        countyFieldValid &&
-        phoneNumberFieldValid &&
-        ageSelected &&
-        genderSelected
-    );
-  }, [
-    nameFieldValid,
-    countyFieldValid,
-    phoneNumberFieldValid,
-    ageSelected,
-    genderSelected,
-  ]);
 
   return (
     <>
@@ -169,9 +154,7 @@ export const UserRegistrationForm = ({ onSubmit }) => {
               { dataValue: "man", displayValue: "Bărbat" },
               { dataValue: "woman", displayValue: "Femeie" },
             ]}
-            optionSelected={(isSelected) => {
-              setGenderSelected(isSelected);
-            }}
+            onOptionSelect={() => setGenderSelected(true)}
           />
         </FormInputContainer>
         <FormInputContainer>
@@ -179,9 +162,7 @@ export const UserRegistrationForm = ({ onSubmit }) => {
             label="Vârsta"
             name="age"
             inputChange={handleInputChange}
-            optionSelected={(isSelected) => {
-              setAgeSelected(isSelected);
-            }}
+            onOptionSelect={() => setAgeSelected(true)}
             items={[
               { dataValue: "18-25", displayValue: "18-25" },
               { dataValue: "25-30", displayValue: "25-30" },

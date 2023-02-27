@@ -1,6 +1,6 @@
 import { dbAPI } from "./constants";
 
-export const GetQuestions = async () => {
+export const fetchQuestions = async () => {
   return fetch(dbAPI.LIST_QUESTIONS)
     .then((res) => {
       if (!res.ok) {
@@ -16,7 +16,7 @@ export const GetQuestions = async () => {
     });
 };
 
-export const SaveUserToDB = async (user) => {
+export const saveUserToDB = async (user) => {
   fetch(dbAPI.SAVE_USER, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

@@ -10,26 +10,22 @@ const FormOptionSelect = ({
   name,
   items,
   inputChange,
-  optionSelected: optionSelectedProp,
+  onOptionSelect,
 }) => {
   const [buttonActive, setButtonActive] = useState("");
   let isSelected = buttonActive !== "";
 
-  let optionSelected =
-    typeof optionSelectedProp === "function"
-      ? optionSelectedProp(isSelected)
-      : optionSelectedProp;
-
   const handleOnClick = (event) => {
     const { id, name, value } = event.target;
     setButtonActive(id);
+    onOptionSelect();
     inputChange({ name, value });
   };
 
   return (
     <>
       <FormInputLabel>{label}</FormInputLabel>
-      <SelectOptionsContainer optionSelected={optionSelected}>
+      <SelectOptionsContainer>
         {items &&
           items.map(({ dataValue, displayValue }, index) => (
             <SelectButton

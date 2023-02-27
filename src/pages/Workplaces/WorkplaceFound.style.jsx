@@ -4,7 +4,6 @@ import { CenterPageContainer, DefaultPageContainer } from "../../style-helpers";
 export const WFPageContainer = styled.main`
   ${DefaultPageContainer};
   ${CenterPageContainer};
-  /* justify-content: space-evenly; */
 `;
 export const IntroContainer = styled.div`
   display: flex;
@@ -22,4 +21,5 @@ export const FormContainer = styled.div`
   min-width: 85%;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 2rem;
 `;
